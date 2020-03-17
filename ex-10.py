@@ -2,3 +2,8 @@
 # Change the last character from 'g' to 't'
 # After chaning, pet should contain 'dot'.
 pet = 'dog'
+
+p = list(pet)
+p[2] = "t"
+pet = ''.join(pet)
+print(pet)
