@@ -2,6 +2,9 @@
 # Write a function say_hello which takes arbitrary number of names as argument
 #and prints hello, <name>
 
+def say_hello(*names):
+    for name in names:
+        print("Hello " +  name)
 
 say_hello('goutham')
 
