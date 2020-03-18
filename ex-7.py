@@ -9,17 +9,19 @@
 
 from random import randint
 
-random_integers = []
-number_freq = {}
-for i in range(100):
-    random_integers.append(randint(0,100))
+# for i in range(100):
+#     random_integers.append(randint(0,100))
 
+random_integers = [randint(1, 199000) for i in range(100)]
+number_freq = {}
 
 for i in random_integers:
     if i in number_freq:
         number_freq[i] +=1
     else:
         number_freq[i] = 1
+
+        
 print("random integers list = ", random_integers)
 print("frequencies = ", number_freq)
     
